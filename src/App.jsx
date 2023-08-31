@@ -5,7 +5,7 @@ function App() {
     <>
       <div className='flex'>
         <h1>Suhaas V</h1>
-        <img className='profile' src='/public/profile.jpg' />
+        <img className='profile' src='/profile.jpg' />
       </div>
     </>
   )
