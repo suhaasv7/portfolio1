@@ -33,9 +33,9 @@ export default function App() {
           <a className='hover:text-orange-500' href='#'>blogs</a>
         </div>
         <div className='flex space-x-2 items-center'>
-          <a href='#'><img src='/public/icons/instagram.svg' alt='instagram' className='w-8' /></a>
-          <a href='https://www.linkedin.com/in/suhaasv7/' target='blank'><img src='/public/icons/linkedin.svg' alt='linkedin' className='w-8' /></a>
-          <a href='https://github.com/suhaasvijay' target='blank'><img src='/public/icons/github.svg' alt='github' className='w-8' /></a>
+          <a href='#'><img src='/icons/instagram.svg' alt='instagram' className='w-8' /></a>
+          <a href='https://www.linkedin.com/in/suhaasv7/' target='blank'><img src='/icons/linkedin.svg' alt='linkedin' className='w-8' /></a>
+          <a href='https://github.com/suhaasvijay' target='blank'><img src='/icons/github.svg' alt='github' className='w-8' /></a>
         </div>
       </nav>
 
@@ -51,7 +51,7 @@ export default function App() {
         </div>
         <img className='w-[45%] absolute right-0 -bottom-20 splash' src='/splash.svg' />
         <img className='w-[20%] absolute -right-40 -top-20 splash' src='/blob.svg' />
-        <img className='profile w-[45%] ' src='/profile-bg.png' />
+        <img className='profile w-[45%]' src='/profile-bg.png' />
       </div>
     </>
   )
