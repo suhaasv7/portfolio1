@@ -1,34 +1,117 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.profile {
+  position: relative;
+  animation: image 20s linear infinite;
 }
 
-.profile:hover {
-  filter: drop-shadow(0 0 50px #ff7b2eaa);
+.splash {
+  position: relative;
+  animation: bg 20s ease-in-out infinite;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.hero::before {
+  position: absolute;
+  content: "";
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  left: -20%;
+  top: 30%;
+  background: linear-gradient(287deg, #FF6600, #ffffa1);
+  z-index: -1;
+  animation: blob1 15s ease-in-out infinite;
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  left: 30%;
+  top: 10%;
+  background: linear-gradient(129deg, #FF6600, #ffffa1);
+  z-index: -10;
+  animation: blob1 10s ease-in-out infinite;
+}
+
+@keyframes blob1 {
+  0% {
+    transform: translate(0px, 0px);
   }
 
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translate(-10px, 20px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@keyframes blob2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(7px, -18px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 
-.card {
-  padding: 2em;
+
+@keyframes image {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(5px, 10px);
+  }
+
+  40% {
+    transform: translate(3px, 7px);
+  }
+
+  60% {
+    transform: translate(2px, 10px);
+  }
+
+  80% {
+    transform: translate(10px, 5px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
-.read-the-docs {
-  color: #888;
+@keyframes bg {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(7px, 3px);
+  }
+
+  40% {
+    transform: translate(5px, 9px);
+  }
+
+  60% {
+    transform: translate(8px, 8px);
+  }
+
+  80% {
+    transform: translate(5px, 9px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
