@@ -1,7 +1,7 @@
 import Typed from 'typed.js';
 import { useEffect, useRef } from 'react';
 
-export default function HeroSection() {
+export default function MainSection() {
 
   const el = useRef(null);
 
