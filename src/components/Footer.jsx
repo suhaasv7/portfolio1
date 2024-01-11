@@ -13,9 +13,9 @@ export default function Footer() {
         </p>
       </div>
 
-      <div className="p-2 text-white bg-orange-500 rounded-md cursor-pointer w-fit h-fit">
+      <a href="https://mail.google.com/mail/u/0/?fs=1&to=suhaasvijay7@gmail.com&tf=cm" target="_blank" className="p-2 text-white bg-orange-500 rounded-md cursor-pointer w-fit h-fit">
         Contact Me
-      </div>
+      </a>
 
       {/* <div className="flex flex-col space-y-1 ">
         <a href="#" className={links}> Home</a>
