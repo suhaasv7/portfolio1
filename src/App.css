@@ -1,13 +1,17 @@
 .profile {
   position: relative;
   animation: image 20s linear infinite;
+  border-radius: 100%;
 }
+
+/* .container {
+  border-image: fill 0 linear-gradient(287deg, #FF6600, #ffffa1);
+} */
 
 .splash {
   position: relative;
   animation: bg 20s ease-in-out infinite;
 }
-
 
 .hero::before {
   position: absolute;
@@ -20,6 +24,8 @@
   background: linear-gradient(287deg, #FF6600, #ffffa1);
   z-index: -1;
   animation: blob1 15s ease-in-out infinite;
+  opacity: 0.7;
+  filter: blur(30px);
 }
 
 .hero::after {
@@ -33,6 +39,8 @@
   background: linear-gradient(129deg, #FF6600, #ffffa1);
   z-index: -10;
   animation: blob1 10s ease-in-out infinite;
+  opacity: 0.7;
+  filter: blur(30px);
 }
 
 @keyframes blob1 {
